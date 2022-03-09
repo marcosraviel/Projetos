@@ -63,7 +63,7 @@ p{
     margin-bottom: 1.25rem;
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width: 800px){
     h1{
         font-size: 4rem;
     }
@@ -76,18 +76,14 @@ p{
     h4{
         font-size: 1rem;
     }
-
     body{
         font-size: 1rem;
     }
-
     h1,
     h2,
     h3,
     h4{
-        
-        line-height: 1;
-        
+        line-height: 1; 
     }
 }
 
@@ -101,10 +97,10 @@ p{
     display: inline-block;
     font-weight: 700;
     transition: var(--transition);
-    font-size: 1rem;
+    font-size: 0.875rem;
     border: none;
     cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover{
@@ -112,7 +108,8 @@ p{
     background: var(--clr-primary-light);
 }
 
-.clearfix::after, .clearfix::before{
+.clearfix::after,
+.clearfix::before{
     content:"";
     clear: both;
     display: table;
@@ -123,7 +120,7 @@ header
 */
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
     url("../images/main-bcg.jpeg") center/cover no-repeat fixed;
     position: relative;
     /* animation */
@@ -151,7 +148,7 @@ header
 
 .banner-btn{
     outline: 0.125rem solid var(--clr-primary);
-    outline-offset: 00.25rem;
+    outline-offset: 0.25rem;
     font-size: 1.25rem;
     padding: 1rem 1.75rem;
 }
@@ -159,7 +156,12 @@ header
 
 .content-divider{
     height:  0.5rem;
-    background: linear-gradient(to left, var(--clr-primary), #e9b949, var(--clr-primary));
+    background: linear-gradient(
+        to left, 
+        var(--clr-primary), 
+        #e9b949, 
+        var(--clr-primary)
+        );
 }
 
 /*
@@ -195,15 +197,19 @@ header
     transform: translateY(-5px);
 }
 
-@media screen and (min-widht: 576px) {
-    .skill{
-        float: left;
-        width: 50%;
+@media screen and (min-width: 576px) {
+    .skill {
+      float: left;
+      width: 50%;
     }
-}
-@media screen and (min-widht: 1200px) {
-    .skill{
-       
-        width: 25%;
+  }
+  @media screen and (min-width: 1200px) {
+    .skill {
+      width: 25%;
     }
-}
+  }
+
+/*
+ about
+*/
+
